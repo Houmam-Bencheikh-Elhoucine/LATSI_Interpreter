@@ -1,0 +1,29 @@
+1000 B = A/2
+1001 SI A <= 1 ALORS VAVERS 1020
+1002 C = 2
+1003 REM "boucle"
+1004 SI C > B ALORS VAVERS 1008
+1005 SI (A - ((A/C) * C)) = 0 ALORS VAVERS 1020
+1006 C = C+1 
+1007 VAVERS 1003
+1008 P = 0
+1009 RETOURNE
+1020 P = C
+1021 RETOURNE
+
+0 REM "This program reads an integer and returns if its absolute value is a prime number or not"
+1 IMPRIME "entrez un nombre: "
+2 ENTREE A
+
+3 SI A < 0 ALORS A = A * (-1)
+4 SOUSROUTINE 1000
+5 SI P = 0 ALORS VAVERS 17
+6 VAVERS 20
+17 IMPRIME A, " est premier"
+18 NL
+19 FIN
+
+
+20 SI P > 0 ALORS IMPRIME A, " n'est pas premier car ", P, " divise ", A
+25 SI P = 0 ALORS IMPRIME A, " n'est pas premier"
+26 VAVERS 18

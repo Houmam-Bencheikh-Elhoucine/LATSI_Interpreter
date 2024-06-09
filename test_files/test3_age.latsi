@@ -1,0 +1,5 @@
+2 IMPRIME "Votre année de naissance: "
+4 IMPRIME "Vous avez: ", (2024 - A), " ans"
+5 NL
+3 ENTREE A
+0 REM "This program reads data and performs simple calculations and then displays the result to the screen"

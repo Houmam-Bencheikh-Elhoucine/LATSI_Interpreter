@@ -1,0 +1,17 @@
+3 C = A + B
+4 D = A - B
+5 E = A * B
+2 ENTREE A, B
+6 F = A / B
+1 IMPRIME "Entre deux nombres: "
+7 IMPRIME A, " + ", B, " = ", C
+9 IMPRIME A, " - ", B, " = ", D
+13 IMPRIME "Ne s'imprime pas"
+13 IMPRIME A, " / ", B, " = ", F
+11 IMPRIME A, " * ", B, " = ", E
+
+8 NL
+10 NL
+12 NL
+14 NL
+0 REM "This program reads data and performs calculations on them and tells the results"

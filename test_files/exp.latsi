@@ -1,0 +1,11 @@
+15 NL
+50 IMPRIME "ne s'imprime pas"
+10 IMPRIME "Bonjour Paris"
+30 SI I >< 10 ALORS VAVERS 40
+35 IMPRIME I, " "
+5 REM "Ce programme est formidable."
+39 VAVERS 39-9
+39 A = B * C
+20 I = 0
+37 I = -I + 1
+40 FIN

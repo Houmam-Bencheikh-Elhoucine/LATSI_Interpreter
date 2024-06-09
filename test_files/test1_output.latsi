@@ -1,0 +1,2 @@
+1 REM "This program tests basic output to the screen"
+2 IMPRIME "Bonjour paris"

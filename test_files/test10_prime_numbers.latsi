@@ -1,0 +1,23 @@
+0 REM "This program reads an integer and returns if its absolute value is a prime number or not"
+1 IMPRIME "entrez un nombre: "
+2 ENTREE A
+
+3 SI A < 0 ALORS A = A * (-1)
+5 NL
+6 B = A/2
+7 SI A <= 1 ALORS VAVERS 25
+8 C = 2
+10 REM "boucle"
+11 SI C > B ALORS VAVERS 17
+12 SI (A - ((A/C) * C)) = 0 ALORS VAVERS 20
+13 C = C+1 
+14 VAVERS 11
+
+17 IMPRIME A, " est premier"
+18 NL
+19 FIN
+
+20 IMPRIME A, " n'est pas premier car ", C, " divise ", A
+21 VAVERS 18
+25 IMPRIME A, " n'est pas premier"
+26 VAVERS 18

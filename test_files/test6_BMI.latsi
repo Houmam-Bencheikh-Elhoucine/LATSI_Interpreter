@@ -1,0 +1,57 @@
+1 REM "This program calculates the BMI, meant to test a bit complex calculations"
+2 IMPRIME "Ce programme te donne ton IMC"
+3 NL
+4 IMPRIME "Donne ton poids [KG]: "
+5 ENTREE P
+6 IMPRIME "Donne ta taille [en cm]: "
+7 ENTREE T
+8 B = ((10 * P * 100 * 100) / (T * T))
+9 IMPRIME "Ton IMC (BMI) est ", B / 10, ".", (B - (B/10)*10)
+10 NL
+11 I = 185
+12 N = I + 64
+13 E = N + (((-1) * (-10)) + 40)
+14 O = E + 100
+
+
+
+
+15 SI B < I ALORS VAVERS I
+
+16 SI B < N ALORS VAVERS N
+
+17 SI B < E ALORS VAVERS E
+
+18 SI B < O ALORS VAVERS O
+
+19 VAVERS 1000
+
+185 IMPRIME "ton poids est insuffisant"
+
+186 NL
+
+187 FIN
+
+249 IMPRIME "ton poids est Normal"
+
+250 NL
+
+251 FIN
+
+299 IMPRIME "ton poids est plus que le normal"
+
+300 NL
+
+
+301 FIN
+
+399 IMPRIME "tu es obèse"
+
+400 NL
+401 FIN
+
+1000 IMPRIME "tu es trés obèse, ou les données entrées sont incorrectes"
+
+1001 NL
+1002 FIN
+

@@ -1,0 +1,30 @@
+1234 REM "this function returns pseudo random sequence of 10 numbers, it reads data from a, b, and c and returns 10 a random number between b and c, with a as a seed"
+1235 R = 110351524548642 * R + 15785123458
+1236 SI R < 0 ALORS R = -R
+1237 R = (R - (R/(B-A)) * (B-A)) + A
+1238 SOUSROUTINE 2000
+1239 IMPRIME "hello"
+1245 RETOURNE
+
+2000 IMPRIME "test"
+2001 RETOURNE
+
+0 REM "this program reads 3 numbers and prints 10 random numbers between the first and the second number, taking the third number as a seed value"
+1 IMPRIME "What is the seed: "
+2 ENTREE R
+3 IMPRIME "what is the lower bound: "
+4 ENTREE A
+5 IMPRIME "what is the upper bound: "
+6 ENTREE B
+7 SI A > B ALORS VAVERS 100
+8 Z = 10
+9 SOUSROUTINE 1234
+10 IMPRIME R
+11 NL
+12 Z = Z-1
+13 SI Z >= 0 ALORS VAVERS 9
+14 IMPRIME "FIN"
+15 NL
+16 FIN
+100 IMPRIME "Invalid numbers"
+101 FIN

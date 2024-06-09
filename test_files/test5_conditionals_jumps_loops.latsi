@@ -1,0 +1,6 @@
+1 REM "This program to test the conditional expression and 'VAVERS' instruction"
+2 IMPRIME "Entrer un nombre positif: "
+3 ENTREE A
+4 SI A < 0 ALORS VAVERS 2
+5 IMPRIME "Le nombre positif que vous avez entré est: ", A
+6 NL
